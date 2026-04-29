@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example - Bootstrap</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .caja {
+        background-color: #0d6efd;
+        color: white;
+        text-align: center;
+        padding: 30px 10px;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center mb-3">Ejemplo Grid Responsivo</h1>
+      <p class="text-center text-muted mb-4">
+        Cambia el tamaño de la ventana para ver cómo varían las cajas por fila.
+      </p>
+
+      <!--
+        Cómo se reparten las cajas según el tamaño de pantalla:
+        - col-12     → móvil  (<576px): 1 caja por fila    (12/12)
+        - col-sm-6   → ≥576px           : 2 cajas por fila (12/6)
+        - col-md-4   → ≥768px           : 3 cajas por fila (12/4)
+        - col-lg-3   → ≥992px           : 4 cajas por fila (12/3)
+        - col-xl-2   → ≥1200px          : 6 cajas por fila (12/2)
+      -->
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 1</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 2</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 3</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 4</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 5</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="caja">Caja 6</div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <h2 class="text-center mb-4">Resumen visual</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Móvil</strong> (&lt;576px) → 1 caja por fila
+        </li>
+        <li class="list-group-item">
+          <strong>sm</strong> (≥576px) → 2 cajas por fila
+        </li>
+        <li class="list-group-item">
+          <strong>md</strong> (≥768px) → 3 cajas por fila
+        </li>
+        <li class="list-group-item">
+          <strong>lg</strong> (≥992px) → 4 cajas por fila
+        </li>
+        <li class="list-group-item">
+          <strong>xl</strong> (≥1200px) → 6 cajas por fila
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
